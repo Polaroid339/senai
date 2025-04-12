@@ -48,7 +48,7 @@ public class ProfessorController {
         professorService.atualizarProfessor(id, professor);
         return "redirect:/professores";
     }
-    
+
     @GetMapping("/deletar/{id}")
     public String deletarProfessor(@PathVariable Long id) {
         professorService.deletarProfessor(id);
